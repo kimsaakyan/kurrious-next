@@ -1,0 +1,59 @@
+const GraphicIcon = () => {
+    return (
+        <svg
+            width="197"
+            height="191"
+            viewBox="0 0 197 191"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <rect
+                x="15.5"
+                y="42"
+                width="34"
+                height="136"
+                rx="5"
+                stroke="#00ADFF"
+                strokeWidth="2"
+            />
+            <rect
+                x="59.5"
+                y="71"
+                width="34"
+                height="107"
+                rx="5"
+                stroke="#00ADFF"
+                strokeWidth="2"
+            />
+            <rect
+                x="103.5"
+                y="71"
+                width="34"
+                height="107"
+                rx="5"
+                stroke="#00ADFF"
+                strokeWidth="2"
+            />
+            <rect
+                x="147.5"
+                y="122"
+                width="34"
+                height="56"
+                rx="5"
+                stroke="#00ADFF"
+                strokeWidth="2"
+            />
+            <rect
+                x="1.5"
+                y="1"
+                width="194"
+                height="189"
+                rx="24"
+                stroke="#00ADFF"
+                strokeWidth="2"
+            />
+        </svg>
+    )
+}
+
+export default GraphicIcon

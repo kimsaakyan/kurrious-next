@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    ul,
+    li,
+    ol {
+        list-style: revert;
+    }
+}
+
+body {
+    font-family: 'Inter', serif;
+}
+
+/*TODO: Permanent Solution */
+.ant-btn.ant-btn-primary {
+    background-color: #00adff !important;
+}
+
+.one-line {
+    max-height: 3.4em;
+}
+
+.cover-text {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+}
+
+.phoneNumberSecondary input {
+    outline: none;
+}
+
+.phoneNumberSecondary input:disabled {
+    background: #fff;
+}
