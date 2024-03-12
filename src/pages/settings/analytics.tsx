@@ -4,7 +4,7 @@ import SettingsLayout from '@/src/layouts/Settings/SettingsLayout'
 import { USER_ROLES } from '@/src/roles/roles'
 import { useRouter } from 'next/router'
 import { CheckAuth } from '@/src/utils/hooks/checkAuth'
-import ComingSoon from '@/src/components/ComingSoon/ComingSoon'
+import ComingSoon from '@/src/components/Widgets/Widgets'
 import { useSelector } from 'react-redux'
 import { authSelector } from '@/src/redux/slices/auth'
 

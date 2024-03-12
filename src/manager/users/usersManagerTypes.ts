@@ -1,5 +1,7 @@
 import { IRegisterUserReqBody } from '@/src/manager/auth/authManagerTypes'
 
+
+
 export interface IUpdateUser {
     firstName: string | undefined
     lastName: string | undefined

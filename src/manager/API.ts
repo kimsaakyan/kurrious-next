@@ -10,6 +10,7 @@ import generateBrainManager from '@/src/manager/brain/brainManager'
 import generateUsersManager from '@/src/manager/users/usersManager'
 import generateChatbotMessagesManager from '@/src/manager/chatbotMessages/chatbotMessagesManager'
 import generateMessagesManager from '@/src/manager/messages/messagesManager'
+import generateWidgetsManager from './widgets/widgetsManager'
 
 const axiosInstance = Axios()
 
@@ -23,6 +24,7 @@ const createAPI = (requestManager: AxiosInstance) => ({
     brain: generateBrainManager(requestManager),
     chatbotMessages: generateChatbotMessagesManager(requestManager),
     messages: generateMessagesManager(requestManager),
+    widgets: generateWidgetsManager(requestManager),
 })
 
 const API = createAPI(axiosInstance)

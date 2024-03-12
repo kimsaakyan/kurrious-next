@@ -1,4 +1,3 @@
-import React from 'react'
 import {
     NavigationMenu,
     NavigationMenuItem,
@@ -7,14 +6,24 @@ import {
 } from '@/src/components/ui/navigation-menu'
 import { useRouter } from 'next/router'
 import { itemsMenuBar } from '@/src/data/itemsMenuBarData'
+import { useSelector } from 'react-redux'
+import { authSelector } from '@/src/redux/slices/auth'
+import { useMemo } from 'react'
 
 const MenuBar = (): ReactNode => {
     const router = useRouter()
+    const currentUser = useSelector(authSelector.currentUser)
+
+    const currentItemsMenuBar = useMemo(() => {
+        return itemsMenuBar.filter((item) =>
+            currentUser?.widgets.some((widget) => widget.label === item.label)
+        )
+    }, [currentUser?.widgets, itemsMenuBar])
 
     return (
         <NavigationMenu>
             <NavigationMenuList>
-                {itemsMenuBar.map((item) => (
+                {currentItemsMenuBar.map((item) => (
                     <NavigationMenuItem key={item.key}>
                         <NavigationMenuTrigger>
                             <div

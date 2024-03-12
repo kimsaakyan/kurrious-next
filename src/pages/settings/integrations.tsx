@@ -14,7 +14,7 @@ import {
 } from '@/src/redux/slices/integrations'
 import { useSelector } from 'react-redux'
 import { CheckAuth } from '@/src/utils/hooks/checkAuth'
-import ComingSoon from '@/src/components/ComingSoon/ComingSoon'
+import ComingSoon from '@/src/components/Widgets/Widgets'
 import { authSelector } from '@/src/redux/slices/auth'
 
 const Integrations = () => {

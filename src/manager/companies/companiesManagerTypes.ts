@@ -1,9 +1,12 @@
+import { IWidget } from "@/src/types/redux/widget"
+
 export interface IUser extends Record<string, unknown> {
     username: string
     email: string
     firstName: string
     lastName: string
     companyName: string
+	companyId:string
     phoneNumber: string
     userType: string
     accountStatus: string
@@ -11,6 +14,7 @@ export interface IUser extends Record<string, unknown> {
     lastLogin: string
     dateJoined: string
     id: string
+    widgets: IWidget[]
 }
 
 export interface ICompany {

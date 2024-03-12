@@ -12,6 +12,9 @@ import { websocketSlice } from '@/src/redux/slices/websocket'
 import { usersSlice } from '@/src/redux/slices/users'
 import { chatbotMessagesSlice } from '@/src/redux/slices/chatbotMessages'
 import { messagesSlice } from '@/src/redux/slices/messages'
+import { widgetsSlice } from '@/src/redux/slices/widgets'
+
+
 
 const reducer = combineReducers({
     auth: authSlice.reducer,
@@ -26,6 +29,7 @@ const reducer = combineReducers({
     chatbotMessages: chatbotMessagesSlice.reducer,
     integrations: integrationsSlice.reducer,
     messages: messagesSlice.reducer,
+    widgets: widgetsSlice.reducer,
 })
 
 export default reducer
